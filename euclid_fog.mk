@@ -17,7 +17,9 @@ TARGET_SUPPORTS_QUICK_TAP := false
 # Inherit from fog device
 $(call inherit-product, device/xiaomi/fog/device.mk)
 
-PRODUCT_NAME := lineage_fog
+EUCLID_BUILD_TYPE := UNOFFICIAL
+EUCLID_MAINTAINER := losshye#EW
+PRODUCT_NAME := euclid_fog
 PRODUCT_DEVICE := fog
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
