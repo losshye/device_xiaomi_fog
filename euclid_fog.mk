@@ -10,15 +10,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common stuff.
 $(call inherit-product, vendor/euclid/config/common_full_phone.mk)
+EUCLID_BUILD_TYPE := UNOFFICIAL
+EUCLID_MAINTAINER := losshye#EW
 TARGET_BOOT_ANIMATION_RES := 720
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_QUICK_TAP := false
+EUCLID_GAPPS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+TARGET_SUPPORTS_TOUCHGESTURES := true
 
 # Inherit from fog device
 $(call inherit-product, device/xiaomi/fog/device.mk)
 
-EUCLID_BUILD_TYPE := UNOFFICIAL
-EUCLID_MAINTAINER := losshye#EW
 PRODUCT_NAME := euclid_fog
 PRODUCT_DEVICE := fog
 PRODUCT_MANUFACTURER := Xiaomi
