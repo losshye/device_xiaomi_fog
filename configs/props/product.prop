@@ -1,5 +1,6 @@
 # Audio
 audio_para_version=C3Q-Audiopara-V01-20211102
+audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
 audio.sys.offload.pstimeout.secs=3
 ro.config.vc_call_vol_steps=11
@@ -41,6 +42,9 @@ ro.lmk.thrashing_limit=50
 ro.lmk.thrashing_limit_decay=25
 ro.lmk.psi_complete_stall_ms=80
 ro.lmk.psi_partial_stall_ms=50
+
+# Set support hide display cutout feature
+ro.support_hide_display_cutout=true
 
 # Phantom process monitoring
 sys.fflag.override.settings_enable_monitor_phantom_procs=false
