@@ -20,11 +20,12 @@ TARGET_INCLUDE_STOCK_ARCORE := false
 # Inherit from fog device
 $(call inherit-product, device/xiaomi/fog/device.mk)
 
-PRODUCT_NAME := statix_fog
+PRODUCT_NAME := voltage_fog
 PRODUCT_DEVICE := fog
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi 10C
+VOLTAGE_BUILD_TYPE := UNOFFICIAL
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
